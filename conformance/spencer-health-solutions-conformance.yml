@@ -1,0 +1,110 @@
+generated: '2026-08-28'
+method: searched
+source: https://spencerhealthsolutions.com/platform/certifications-compliance-and-data-standards/
+retrieval_note: >-
+  Spencer Health Solutions publishes a "Quality and Compliance" page at the source URL
+  above, linked from the primary navigation on every page of spencerhealthsolutions.com.
+  A direct HTTPS fetch of that URL returns HTTP 202 with a SiteGround JavaScript bot
+  challenge (header `sg-captcha: challenge`) rather than the page body, and the page is
+  not present in the Internet Archive, so the certification list below was read from the
+  public web-search index of that exact URL rather than from a body we fetched ourselves.
+  The ISO 27001:2022 entry is independently corroborated by the company's own
+  BusinessWire release, retrieved and read in full as a PDF (see evidence). Every other
+  entry is attributed to the company's page and carries confidence: reported rather than
+  verified, and none of it is derived from a contract — this provider publishes none.
+api_conformance:
+  note: >-
+    No cross-cutting API standard applies. Spencer Health Solutions publishes no OpenAPI,
+    AsyncAPI, GraphQL SDL, MCP manifest, WSDL, .proto or Postman collection at any host
+    it controls, so there is no contract in which oauth2, oidc, rfc9457, pagination,
+    idempotency or JSON:API conformance could be asserted or refuted.
+  standards: []
+domain_standard_conformance:
+  applicable: true
+  regime: healthcare / medical devices
+  declared_in_contract: false
+  note: >-
+    Healthcare domain standards (HL7 v2, FHIR, NCPDP SCRIPT, IHE) are the shortlist this
+    provider's market would be probed for, and NONE is claimed anywhere on the company's
+    public surface. The company's own compliance page names quality-system, safety and
+    information-security standards, not health data-interchange standards. This is a
+    reward-only check and the provider is not penalised for it; it is recorded as an
+    honest absence, not a failure.
+  probed_for: [HL7 v2, HL7 FHIR, NCPDP SCRIPT, IHE profiles, DICOM, X12 837/835]
+  found: []
+certifications:
+- id: iso-27001
+  name: ISO/IEC 27001:2022 Information Security Management System
+  conforms: true
+  confidence: verified
+  evidence: >-
+    Company press release, 2024-09-11: "Spencer Health Solutions (SHS) ... announced that
+    it has achieved ISO 27001:2022 certification." Retrieved as PDF, HTTP 200.
+  evidence_url: https://s24.q4cdn.com/622300748/files/doc_news/Spencer-Health-Solutions-Achieves-ISO-27001-Certification-2024.pdf
+- id: iso-13485
+  name: ISO 13485:2016 Medical devices — Quality management systems
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page.
+- id: iso-9001
+  name: ISO 9001:2015 Quality management systems
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page.
+- id: iso-14971
+  name: ISO 14971:2019 Application of risk management to medical devices
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page.
+- id: iec-60601-1-11
+  name: IEC 60601-1-11 Medical electrical equipment — home healthcare environment
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page.
+- id: ul-61010
+  name: UL 61010 Safety requirements for electrical equipment
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page.
+regulatory:
+- id: hipaa
+  name: HIPAA (US)
+  conforms: true
+  confidence: reported
+  evidence: Company Quality and Compliance page states products are HIPAA compliant.
+- id: 21-cfr-820
+  name: 21 CFR Part 820 Quality System Regulation (US FDA)
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page.
+- id: 21-cfr-part-11
+  name: 21 CFR Part 11 Electronic Records; Electronic Signatures (US FDA)
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page.
+- id: eu-mdr-2017-745
+  name: EU MDR 2017/745 Medical Device Regulation
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page for the EU market.
+- id: gdpr
+  name: GDPR (EU)
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page for the EU market.
+controls:
+- id: aes-256
+  name: AES-256 encryption of sensitive data
+  conforms: true
+  confidence: reported
+  evidence: Named on the company Quality and Compliance page.
+evidence:
+- url: https://spencerhealthsolutions.com/platform/certifications-compliance-and-data-standards/
+  status: 202
+  note: SiteGround bot challenge; page body not directly retrievable by our crawler.
+- url: https://s24.q4cdn.com/622300748/files/doc_news/Spencer-Health-Solutions-Achieves-ISO-27001-Certification-2024.pdf
+  status: 200
+  note: BusinessWire release PDF, read in full — ISO 27001:2022, dated 2024-09-11.
+- url: https://www.businesswire.com/news/home/20240909705950/en/Spencer-Health-Solutions-Achieves-ISO-27001-Certification
+  status: 403
+  note: Akamai edge denied our crawler; the same release was read from the PDF above.

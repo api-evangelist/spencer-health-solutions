@@ -1,0 +1,20 @@
+generated: '2026-08-28'
+method: searched
+source: https://spencerhealthsolutions.com/platform/
+limit_count: 0
+note: >-
+  No rate limits are documented because there is no public API to rate-limit. Contract
+  discovery on 2026-08-28 probed /openapi.json, /openapi.yaml, /swagger.json, /api-docs,
+  /graphql, /asyncapi.yaml and the full /.well-known/* discovery set against
+  spencerhealthsolutions.com, helloimspencer.com and blog.spencerhealthsolutions.com and
+  found no machine-readable contract, no developer portal and no rate-limit headers to
+  observe. DNS and Certificate Transparency show no api., docs., developer. or portal.
+  hostname has ever existed for this domain. Recorded as an honest zero.
+rate_limits: []
+evidence:
+- url: https://spencerhealthsolutions.com/openapi.json
+  status: 202
+  note: SiteGround bot challenge — same response as the nonsense control path.
+- url: https://api.certspotter.com/v1/issuances?domain=spencerhealthsolutions.com&include_subdomains=true
+  status: 200
+  note: Certificate Transparency lists only blog., email., go., www. and the apex.

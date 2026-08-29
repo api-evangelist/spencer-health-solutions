@@ -1,0 +1,46 @@
+generated: '2026-08-28'
+method: searched
+source: >-
+  https://registry.npmjs.org/-/v1/search?text=%40spencer-health%2F (npm registry, HTTP 200)
+  and https://registry.npmjs.org/@spencer-health/hap-db (HTTP 200)
+note: >-
+  Spencer Health Solutions publishes no client SDK, because it publishes no public API.
+  One first-party npm package exists and is recorded here for completeness: it is an
+  INTERNAL platform library, not a client library for a public API. Its maintainer email
+  is npm@spencerhealthsolutions.com and its repository is
+  bitbucket.org/spencerhealthsolutions/hap-db, so first-party ownership is unambiguous —
+  but it is licensed UNLICENSED, has no README-documented public surface, and ships
+  Objection/Knex database models plus MySQL access helpers ("hap" appears to be the
+  internal name of the spencer platform). No `SDKs` pointer is emitted, because asserting
+  an SDK for an API that does not exist publicly would be a false claim on the provider's
+  behalf. Registries probed with no first-party result: PyPI (404 on spencer-health),
+  Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist, crates.io. The company's public
+  GitHub search returns zero organizations and zero repositories; its Bitbucket workspace
+  (api.bitbucket.org/2.0/repositories/spencerhealthsolutions, HTTP 200) lists zero public
+  repositories.
+package_count: 1
+official_sdk_count: 0
+packages:
+- language: javascript
+  registry: npm
+  name: "@spencer-health/hap-db"
+  url: https://www.npmjs.com/package/@spencer-health/hap-db
+  install: npm install @spencer-health/hap-db
+  official: true
+  kind: internal-library
+  is_api_client: false
+  license: UNLICENSED
+  version: 2.29.29
+  published: '2026-06-01'
+  description: spencer Database Models and higher order functions for DB access
+  source_repository: https://bitbucket.org/spencerhealthsolutions/hap-db
+  maintainer: npm@spencerhealthsolutions.com
+registries_probed:
+- {registry: npm, result: 1 first-party package, status: 200}
+- {registry: pypi, result: none, status: 404}
+- {registry: maven-central, result: none}
+- {registry: nuget, result: none}
+- {registry: pkg.go.dev, result: none}
+- {registry: rubygems, result: none}
+- {registry: packagist, result: none}
+- {registry: crates.io, result: none}

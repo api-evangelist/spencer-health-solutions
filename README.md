@@ -64,5 +64,18 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Spencer Health Solutions is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Spencer Health Solutions is a Morrisville, North Carolina medical device and digital health
+company behind spencer®, an in-home smart medication dispenser that combines automated
+multi-dose dispensing from pharmacy-prepared refills with telehealth, patient surveys and
+connected Bluetooth biometric devices. The platform pairs the device with spencerAssist®
+(patient/caregiver mobile app) and spencerCare™ (clinician web portal), and is sold into care
+management, pharmaceutical patient-support programs and decentralized clinical trials.
+
+**This company publishes no public API.** Contract discovery on 2026-08-28 found no OpenAPI,
+AsyncAPI, GraphQL SDL, MCP server, A2A agent card, WSDL, .proto or Postman collection on any
+host it controls, and Certificate Transparency shows no `api.`, `docs.`, `developer.` or
+`portal.` hostname has ever been issued for the domain. See `apis.yml` → `x-coverage`.
+
+- Website: https://spencerhealthsolutions.com/
+- Patient site: https://helloimspencer.com/
+- Quality and Compliance: https://spencerhealthsolutions.com/platform/certifications-compliance-and-data-standards/

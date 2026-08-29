@@ -1,0 +1,67 @@
+generated: '2026-08-28'
+method: probed
+source: live HTTPS probes of every Spencer Health Solutions web host, 2026-08-28
+hit_count: 0
+note: >-
+  No /.well-known document was retrieved from any Spencer Health Solutions host, and no
+  WellKnown or SecurityTxt pointer is emitted. Two distinct catch-all behaviours were
+  observed and are recorded here so a later run does not misread either as a served
+  surface. (1) spencerhealthsolutions.com and helloimspencer.com sit behind a SiteGround
+  JavaScript bot challenge: EVERY path — real pages, /.well-known/* paths, and a nonsense
+  control path — answers HTTP 202 with a ~180 byte HTML meta-refresh to
+  /.well-known/sgcaptcha/ and the header `sg-captcha: challenge`. A 202 here is the
+  challenge, not a document. (2) blog.spencerhealthsolutions.com is a HubSpot CMS site
+  whose 404 page is a 28,639 byte HTML document served for every path including the
+  control. Neither host returned a parseable /.well-known document.
+hosts:
+- host: https://spencerhealthsolutions.com
+  edge: SiteGround bot challenge (sg-captcha:challenge) — every path returns 202 HTML
+  documents:
+  - {path: /.well-known/security.txt, status: 202, file: null}
+  - {path: /.well-known/openid-configuration, status: 202, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 202, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 202, file: null}
+  - {path: /.well-known/api-catalog, status: 202, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 202, file: null}
+  - {path: /.well-known/agent-card.json, status: 202, file: null}
+  - {path: /.well-known/agent.json, status: 202, file: null}
+  - {path: /.well-known/mcp.json, status: 202, file: null}
+  soft_404_control:
+    path: /.well-known/definitely-not-a-real-path-control-9x7
+    status: 202
+    bytes: 221
+    verdict: catch-all — the control returns the same challenge as every real path
+- host: https://helloimspencer.com
+  edge: SiteGround bot challenge (sg-captcha:challenge) — every path returns 202 HTML
+  documents:
+  - {path: /.well-known/security.txt, status: 202, file: null}
+  - {path: /.well-known/openid-configuration, status: 202, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 202, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 202, file: null}
+  - {path: /.well-known/api-catalog, status: 202, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 202, file: null}
+  - {path: /.well-known/agent-card.json, status: 202, file: null}
+  - {path: /.well-known/agent.json, status: 202, file: null}
+  - {path: /.well-known/mcp.json, status: 202, file: null}
+  soft_404_control:
+    path: /.well-known/definitely-not-a-real-path-control-9x7
+    status: 202
+    bytes: 221
+    verdict: catch-all — the control returns the same challenge as every real path
+- host: https://blog.spencerhealthsolutions.com
+  edge: HubSpot CMS — uniform 28,639 byte HTML 404 for every path
+  documents:
+  - {path: /.well-known/security.txt, status: 404, file: null}
+  - {path: /.well-known/openid-configuration, status: 404, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 404, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 404, file: null}
+  - {path: /.well-known/api-catalog, status: 404, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 404, file: null}
+  - {path: /.well-known/agent-card.json, status: 404, file: null}
+  - {path: /.well-known/agent.json, status: 404, file: null}
+  - {path: /.well-known/mcp.json, status: 404, file: null}
+  soft_404_control:
+    path: /.well-known/definitely-not-a-real-path-control-9x7
+    status: 404
+    bytes: 28639
+    verdict: honest 404 — control matches, no document served

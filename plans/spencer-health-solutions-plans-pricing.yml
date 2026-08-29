@@ -1,0 +1,25 @@
+generated: '2026-08-28'
+method: searched
+source: https://spencerhealthsolutions.com/book-a-demo/
+plan_count: 0
+pricing_model: contact-sales
+note: >-
+  Spencer Health Solutions publishes no pricing of any kind. The site has no /pricing or
+  /plans path — confirmed against the Internet Archive URL inventory for
+  spencerhealthsolutions.com, which lists /, /about-us, /platform, /solutions,
+  /care-management, /clinical-trials, /patient-support, /resources, /in-the-news,
+  /locator, /book-a-demo, /privacy-policy, /cookie-policy and /blog/* and nothing
+  commercial. Every commercial call to action on the site routes to /book-a-demo/. The
+  product is a physical medication-dispensing device plus a managed portal sold through
+  direct enterprise agreements to home-care and senior-living operators, pharmaceutical
+  patient-support programs and clinical-trial sponsors; the March 2025 PharMerica
+  partnership is the distribution shape rather than a self-serve plan. An honest zero,
+  not a gap in our search.
+plans: []
+evidence:
+- url: https://spencerhealthsolutions.com/book-a-demo/
+  status: 202
+  note: SiteGround bot challenge on fetch; page exists and is linked from every page.
+- url: https://web.archive.org/cdx/search/cdx?url=spencerhealthsolutions.com*
+  status: 200
+  note: Archived URL inventory contains no /pricing or /plans path.
