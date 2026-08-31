@@ -35,6 +35,20 @@ tags:
 - Clinical Trials
 - Patient Engagement
 - Care Management
+- Real-World Data
+tags_raw:
+- Company
+- Health
+- Healthcare
+- Medication Management
+- Medication Adherence
+- Medical Devices
+- Digital Health
+- Telehealth
+- Remote Patient Monitoring
+- Clinical Trials
+- Patient Engagement
+- Care Management
 - Real World Data
 apis: []
 maintainers:
