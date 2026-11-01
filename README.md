@@ -64,18 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Spencer Health Solutions is a Morrisville, North Carolina medical device and digital health
-company behind spencer®, an in-home smart medication dispenser that combines automated
-multi-dose dispensing from pharmacy-prepared refills with telehealth, patient surveys and
-connected Bluetooth biometric devices. The platform pairs the device with spencerAssist®
-(patient/caregiver mobile app) and spencerCare™ (clinician web portal), and is sold into care
-management, pharmaceutical patient-support programs and decentralized clinical trials.
+Spencer Health Solutions is a Morrisville, North Carolina medical device and digital health company behind spencer®, an in-home smart medication dispenser that combines automated multi-dose dispensing from pharmacy-prepared refills with telehealth, patient surveys and connected Bluetooth biometric devices. The spencer platform pairs the countertop device with spencerAssist®, a mobile app for patients and caregivers, and spencerCare™, a web portal that lets healthcare professionals run real-time alerts, telehealth visits and longitudinal real-world data collection. The company sells into three markets — care management for home care and senior living, patient support programs for pharmaceutical manufacturers, and decentralized clinical trials, where the spencer SmartHub™ serves as the in-home trial partner — and reports a 97% medication adherence rate across more than 5,800 patients in the United States, Canada and Europe. Spencer Health Solutions publishes no public developer program, API reference or machine-readable contract; the platform is delivered as a managed device and portal offering through direct commercial and partner agreements, including a 2025 partnership with PharMerica.
 
-**This company publishes no public API.** Contract discovery on 2026-08-28 found no OpenAPI,
-AsyncAPI, GraphQL SDL, MCP server, A2A agent card, WSDL, .proto or Postman collection on any
-host it controls, and Certificate Transparency shows no `api.`, `docs.`, `developer.` or
-`portal.` hostname has ever been issued for the domain. See `apis.yml` → `x-coverage`.
+**Areas:** Company · Health · Healthcare · Medication Management · Medication Adherence · Medical Devices · Digital Health · Telehealth · Remote Patient Monitoring · Clinical Trials · Patient Engagement · Care Management
 
-- Website: https://spencerhealthsolutions.com/
-- Patient site: https://helloimspencer.com/
-- Quality and Compliance: https://spencerhealthsolutions.com/platform/certifications-compliance-and-data-standards/
+## Spencer Health Solutions on APIs.io
+
+Everything profiled for Spencer Health Solutions is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/spencer-health-solutions/](https://apis.io/providers/spencer-health-solutions/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Spencer Health Solutions Domain Security](https://apis.io/security/spencer-health-solutions/spencer-health-solutions-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Spencer Health Solutions Plans Pricing](https://apis.io/plans/spencer-health-solutions/spencer-health-solutions-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Spencer Health Solutions Rate Limits](https://apis.io/rate-limits/spencer-health-solutions/spencer-health-solutions-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://spencerhealthsolutions.com/)
+- [Support](https://helloimspencer.com/contact-us/)
+- [Blog](https://spencerhealthsolutions.com/blog/)
+- [Compliance](https://spencerhealthsolutions.com/platform/certifications-compliance-and-data-standards/)
+- [Privacy policy](https://spencerhealthsolutions.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 4.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/spencer-health-solutions/](https://apis.io/providers/spencer-health-solutions/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Spencer Health Solutions: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/spencer-health-solutions/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
